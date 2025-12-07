@@ -278,4 +278,9 @@ hr {
   body {
     margin: 0 7px;
   }
+
+  .wrap {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
 }
