@@ -2,7 +2,7 @@ highlighter: rouge
 permalink: /blog/:year/:month/:day/:title/
 environment: prod
 title: "Yvan Richard"
-url: "https://github.com/YVYX04/yvanrichard.github.io"
+url: "https://yvyx04.github.io/yvanrichard.github.io/"
 baseurl: ""
 plugins:
   - jekyll-scholar
