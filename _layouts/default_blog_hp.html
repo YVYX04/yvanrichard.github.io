@@ -8,9 +8,9 @@
     <meta name='keywords' content='{{ page.keywords }}'>
     <meta name='author' content='Yvan Richard'>
 
-    <link href='/css/blog.css' rel='stylesheet'/>
-    <link href='/css/trac.css' rel='stylesheet'/>
-    <link href='/css/markdown.css' rel='stylesheet'/>
+    <link href='{{ "/css/blog.css" | relative_url }}' rel='stylesheet'/>
+    <link href='{{ "/css/trac.css" | relative_url }}' rel='stylesheet'/>
+    <link href='{{ "/css/markdown.css" | relative_url }}' rel='stylesheet'/>
 
     {% include mathjax.html %}
 </head>
