@@ -73,6 +73,40 @@ p.homepage-desc {
   font-family: 'GT Haptik', 'Inter', 'Roboto', sans-serif;
 }
 
+/* Footer Style */
+.site-footer {
+    background: #f6f6f6;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+    font-family: 'GT Haptik', 'Inter', 'Roboto', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-left p {
+    margin: 0.2rem 0;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: #1b263b; /* adjust if needed */
+    transition: 0.2s;
+}
+
+.footer-right a:hover {
+    opacity: 0.7;
+}
+    
+
 /* Sytle for Column Links */
 .links ul {
     list-style: none;
@@ -94,6 +128,22 @@ p.homepage-desc {
 .links a:hover {
     border-color: black;
     transform: translateY(-2px);
+    /* Color the box with timed transition */
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background: #606c38;
+    color: white;
+}
+
+/* Style for Image on Homepage */
+.homepage-image {
+    display:flex;
+    justify-content:center;
+    margin-top:5vh;
+}
+
+.homepage-image img {
+    width : 40vw;
+    height: auto;
 }
 
 
@@ -118,10 +168,13 @@ p.homepage-desc {
   color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
   border-bottom: none;
-  font-size: 12px;
+  font-size: 1rem;
 }
 .nav a:hover {
+  transition: 0.2s ease-in;
+  color: #606c38;
   font-weight: bold;
+
 }
 .nav ul {
   list-style-type: none;
@@ -283,4 +336,22 @@ hr {
     max-width: 80vw;
     margin: 0 auto;
   }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right p,
+  .footer-right a {
+    text-align: center;
+  }
+
+  .homepage-image img {
+    width: 80vw;
+  }
+
+  
 }
