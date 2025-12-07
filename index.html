@@ -1,0 +1,64 @@
+---
+title: home
+---
+
+<html>
+<head>
+    <title>Yvan Richard</title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+
+    <meta name='description' content='Yvan Richard is an Economics student at the University of St. Gallen.'>
+    <meta name='keywords' content='
+        machine learning,
+        statistical machine learning,
+        bayesian inference,
+        statistics,
+        computational statistics,
+        linear algebra,
+        numerical linear algebra,
+        statistical software,
+        deep learning,
+        computer science
+    '>
+    <meta name='author' content='Yvan Richard'>
+
+    <link rel='shortcut icon' href='{{ "/favicon.png" | relative_url }}' />
+    <link href='{{ "/css/blog.css" | relative_url }}' rel='stylesheet'/>
+
+    {% include mathjax.html %}
+</head>
+<body style="background:#f6f6f6;">
+    {% include nav.html %}
+    <hr/>
+
+    <div id='home' class='wrap'>
+        <section class='intro'>
+            <h1 class="homepage-title">Yvan Richard</h1>
+            <p class="homepage-desc">Hey! I'm Yvan, an Economics student at the University of St. Gallen, interested in machine learning, statistics, finance, and
+                programming, among other things. Welcome to my website :D
+
+            </p>
+        </section>
+
+
+        <section class='links' style="font-family: 'GT Haptik', 'Inter', 'Roboto', sans-serif; font-size: large; margin-top: 5vh;">
+            <div style="display:flex; justify-content:center; margin-top:5vh;">
+                <img src="images/profile.png" alt="me" style="width:38vw;">
+            </div>
+            <ul>
+                <li><a href='{{ "/blog" | relative_url }}'>Blog</a></li>
+                <li><a href='https://github.com/YVYX04' target='_blank' rel='noopener noreferrer'>Code</a></li>
+                <li><a href='cv.pdf'>CV</a></li>
+            </ul>
+            
+        </section>
+
+        <!-- Footer -->
+        <hr style="margin-top: 12vh; margin-bottom: 3vh;">
+        {% include footer.html %}
+    </div>
+
+    
+</body>
+</html>

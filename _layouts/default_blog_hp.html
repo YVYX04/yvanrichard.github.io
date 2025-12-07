@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+
+    <meta name='description' content='Yvan Richard is a Economics student at the University of St. Gallen.'>
+    <meta name='keywords' content='{{ page.keywords }}'>
+    <meta name='author' content='Yvan Richard'>
+
+    <link href='/css/blog.css' rel='stylesheet'/>
+    <link href='/css/trac.css' rel='stylesheet'/>
+    <link href='/css/markdown.css' rel='stylesheet'/>
+
+    {% include mathjax.html %}
+</head>
+<body style="background:#f6f6f6;">
+    <div class='content' style="margin-bottom : 2vh; border-bottom: none;">
+        {% include nav.html %}
+        <div class='front-matter' style="border-bottom: none; padding-bottom: 0;">
+            <div class='wrap'>
+                <h1 class="homepage-title">{{ page.title }}</h1>
+                <p class="homepage-desc">{{ page.subtitle }}</p>
+                <div class='clear'></div>
+            </div>
+            <hr style="margin-top: 6vh; margin-bottom: 0vh; width: 50vw;">
+        </div>
+        <div class='wrap article' style = "border-bottom: none;">
+            {{ content }}
+        </div>
+        <div id='bibliography' style = "border-top: none;">
+            <div class='wrap'>
+                {% bibliography --cited %}
+            </div>
+        </div>
+    </div>
+    <div id = 'home' class='wrap' style = "border-top: none;">
+        <!-- Footer -->
+        <hr style="margin-bottom: 3vh;">
+        {% include footer.html %}
+    </div>
+</body>
+</html>

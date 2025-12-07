@@ -1,0 +1,38 @@
+---
+title: My Blog
+subtitle: Welcome to my blog! You can find all my posts here. If you encounter mistakes, have suggestions, different opinions, or just want to chat, feel free to reach out :)
+layout: default_blog_hp
+---
+
+
+<!--{% include nav.html %}-->
+<div id='blog' class='wrap' style="margin-top : 0vh;">
+    <div id='intro' style="margin-top : 0vh; margin-bottom : 12vh;">
+        <div class='quote' style="font-style: italic; text-align: center; font-size : large; color : #bc6c25; margin-bottom : 4vh;">
+            <p>L'instinct, c'est l'âme à quatre pattes ; la pensée, c'est l'esprit debout.</p>
+            <a href='http://evene.lefigaro.fr/citation/instinct-ame-quatre-pattes-pensee-esprit-debout-2164.php' target='_blank' style = "color : #bc6c25;">Victor Hugo</a>
+        </div>
+    </div>
+    <div id='posts' class='section'>
+        {% for post in site.posts %}
+            <div class='post-row'>
+                <p class='post-title'>
+                    <a href="{{ post.url }}">
+                        {% katexmm %}
+                        {{ post.title }}
+                        {% endkatexmm %}
+                    </a>
+                </p>
+                <p class='post-date'>
+                    {{ post.date | date_to_long_string }}
+                </p>
+            </div>
+            <p class='post-subtitle'>
+                {% katexmm %}
+                {{ post.subtitle }}
+                {% endkatexmm %}
+            </p>
+        {% endfor %}
+    </div>
+    
+</div>
