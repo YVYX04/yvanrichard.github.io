@@ -2,16 +2,11 @@ highlighter: rouge
 permalink: /blog/:year/:month/:day/:title/
 environment: prod
 title: "Yvan Richard"
-url: "https://yvyx04.github.io/yvanrichard.github.io/"
-baseurl: ""
+url: "https://yvyx04.github.io"
+baseurl: "/yvanrichard.github.io"
 plugins:
-  - jekyll-scholar
+  # - jekyll-scholar
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-katex
-katex:
-  js_path: "assets"  # Path used to search for katex.min.js
-  rendering_options:
-    # Default KaTeX rendering options. See https://github.com/Khan/KaTeX#rendering-options
-    throw_error: false      # throwOnError - set to false if you want rendering to output error as text rather than a build error
-    error_color: "#cc0000"  # errorColor
+  - github-pages
+  # - jekyll-katex
