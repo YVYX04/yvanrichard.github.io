@@ -69,7 +69,7 @@ ML task (classification/regression/forecasting).
 
 [...]
 
-## 2.7. Final Evalation, Deployment, & Supervision
+## 2.7. Final Evaluation, Deployment, & Supervision
 
 
 # 3. Conclusion
