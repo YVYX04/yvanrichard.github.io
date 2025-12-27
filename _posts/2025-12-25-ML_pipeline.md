@@ -78,10 +78,18 @@ Once the data has been made available for retrieval, an ideal first step is to p
 
 Feature engineering is best viewed as the deliberate construction of a *data representation* that makes the learning task statistically and operationally tractable, subject to the constraint that every feature must be computable from information available at prediction time. As stated by Domingos (2012, p.):
 
-<div id="blog">
-  <div class="quote">
-    <p>
-        "Often, the
+<div style="
+  max-width: 50vw;
+  margin: 1.25rem auto;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  font-style: italic;
+  line-height: 1.6;
+  border-left: 4px solid #bbb;
+  background: #eeeeeeff;
+">
+  <p style="margin: 0;">
+    "Often, the
         raw data is not in a form that is amenable to learning, but you can construct features from it that are. This
         is typically where most of the effort in
         a machine learning project goes. It is
@@ -89,9 +97,8 @@ Feature engineering is best viewed as the deliberate construction of a *data rep
         parts, where intuition, creativity and
         “black art” are as important as the
         technical stuff."
-        </p>
-  </div>
-</div> 
+  </p>
+</div>
 
 In the SBB delay setting, this implies engineering temporally valid predictors (e.g., scheduled-time indicators, calendar effects, rolling historical delay statistics at the station–hour level, and time-aligned weather covariates), while controlling for leakage (no post-arrival information) and ensuring the transformations are reproducible and consistent between training and deployment.
 
@@ -143,8 +150,6 @@ This post presented a compact, practice-oriented structure for small-scale ML pr
 - Gama, J., Žliobaitė, I., Bifet, A., Pechenizkiy, M., & Bouchachia, A. (2014). A survey on concept drift adaptation. *ACM computing surveys (CSUR), 46(4)*, 1-37.
 
 - Géron, A. (2022). *Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow*. O'Reilly Media, Inc.
-
-- Kohavi, R. (1995). A study of cross-validation and bootstrap for accuracy estimation and model selection. In *Proceedings of the 14th International Joint Conference on Artificial Intelligence (IJCAI)* (pp. 1137–1145).
 
 - McElheran, K., Li, J. F., Brynjolfsson, E., Kroff, Z., Dinlersoz, E., Foster, L., & Zolas, N. (2024). AI adoption in America: Who, what, and where. *Journal of Economics & Management Strategy, 33(2)*, 375-415.
 
