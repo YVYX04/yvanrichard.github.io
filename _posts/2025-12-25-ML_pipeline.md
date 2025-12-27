@@ -118,11 +118,11 @@ Model improvement is typically driven by *error analysis* (where does the model 
 
 ### Final evaluation
 
-The final evaluation should be performed *once*, on a test set that has not been used for feature design, model selection, or hyperparameter tuning, in order to obtain an unbiased estimate of generalization performance. When cross-validation is used for model selection, it should be nested (or accompanied by a truly held-out test set) to mitigate selection bias. If the performances meet the expected benchmarks, the ML pipeline could be moved to production.
+The final evaluation should be performed *once*, on a test set that has not been used for feature design, model selection, or hyperparameter tuning, in order to obtain an unbiased estimate of generalization performance. When cross-validation is used for model selection, it should be nested (or accompanied by a truly held-out test set) to mitigate selection bias. If the performances meet the expected benchmarks, the ML pipeline can be moved to production.
 
 ## 2.7. Deployment & Supervision
 
-Even small projects should anticipate that deployment is where systems fail. A central operational insight is that ML systems accumulate “technical debt”: they may be quick to build but expensive to maintain (Sculley et al., 2015). Hence, a minimal deployment plan could therefore include:
+Even small projects should anticipate that deployment is where systems fail. A central operational insight is that ML systems accumulate “technical debt”: they may be quick to build but expensive to maintain (Sculley et al., 2015). To prevent those issues, a minimal deployment plan could include:
 
 + Reproducible training script (single command, pinned dependencies).
 + A saved artefact containing preprocessing + model.
