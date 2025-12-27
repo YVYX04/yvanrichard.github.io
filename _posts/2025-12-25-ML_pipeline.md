@@ -50,9 +50,7 @@ The *business understanding* phase is typically the decisive step in applied ML.
 In a [project](https://github.com/YVYX04/ML_First_Steps/blob/main/02_real_estate.ipynb) inspired by Géron’s *Hands-On Machine Learning* (Géron, 2022), I predict the median house value for California census blocks in order to improve upon heuristic pricing rules used by real estate agents. This objective maps naturally to a *regression* task. A common metric for model selection in this setting is the mean squared error (MSE), which penalizes larger deviations more strongly than smaller ones:
 
 $$
-\begin{equation}
 \mathrm{MSE}(y^{(i)}, \hat{y}^{(i)}) = \frac{1}{n} \sum_{i = 1}^{n} (y^{(i)} - \hat{y}^{(i)})^2
-\end{equation}
 $$
 
 where we seek to minimize the square deviation between the true value $y^{(i)}$ and the estimate $\hat{y}^{(i)}$.
