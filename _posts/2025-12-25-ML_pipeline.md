@@ -14,7 +14,7 @@ step-by-step methodology for applying core ML techniques.
 
 # 1. Introduction
 
-Over the past decade, the field of *data science*, and *artificial intelligence* (AI) have attracted enormous attention
+Over the past decade, the fields of *data science*, and *artificial intelligence* (AI) have attracted enormous attention
 due to the progressive shift of our society towards a numerical era. OpenAI's public release of the large-language model 
 (LLM) GPT 3.5. in November 2022 further propagated the sentiment that humanity might be at the dawn of a new industrial revolution.
 Today, it is still unclear how, and where AI influence will really materialize in society. The manufacturing, information-technology,
