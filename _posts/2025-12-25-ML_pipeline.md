@@ -1,6 +1,6 @@
 ---
 title: Structure of a Small Machine Learning Pipeline
-subtitle: A practical, step-by-step guide to building a small-scale machine learning pipeline—from problem framing and data preparation to baseline models, tuning, evaluation, and deployment considerations.
+subtitle: A conceptual guide to building a small-scale machine learning pipeline—from problem framing and data preparation to baseline models, tuning, evaluation, and deployment considerations.
 layout: default
 date: 2025-12-27
 keywords: machine learning, business, economics
@@ -9,9 +9,8 @@ published: true
 
 # Foreword
 
-In this post, I outline the typical stages of a small-scale machine learning (ML) pipeline. I present a rigorous,
-step-by-step methodology for applying core ML techniques, and I discuss how each stage can be translated into actionable
-business insights.
+In this post, I outline the typical stages of a small-scale machine learning (ML) pipeline. I present a conceptual,
+step-by-step methodology for applying core ML techniques.
 
 # 1. Introduction
 
